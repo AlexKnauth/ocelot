@@ -235,10 +235,15 @@
 ;; -- constants ----------------------------------------------------------------
 
 (struct node/expr/constant node/expr ([type : CSymbol])
+  #:type-name Node/Expr/Constant
   #:transparent
   #:methods gen:custom-write
   [(define (write-proc self port mode)
      (fprintf port "~v" (node/expr/constant-type self)))])
+
+(: none : CNode/Expr/Constant)
+(: univ : CNode/Expr/Constant)
+(: iden : CNode/Expr/Constant)
 (define none (node/expr/constant 1 'none))
 (define univ (node/expr/constant 1 'univ))
 (define iden (node/expr/constant 2 'iden))
