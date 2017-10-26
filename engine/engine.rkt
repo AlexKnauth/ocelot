@@ -8,7 +8,7 @@
                   relation-name relation-arity)
          "../lang/bounds.rkt" "../lang/universe.rkt"
          "matrix.rkt" "matrix-ops.rkt" "symmetry.rkt" "interpretation.rkt"
-         (prefix-in $ "../lang/util/unlifted-ops.rkt"))
+         (prefix-in $ "../typed-rosette-util/unlifted-ops.rkt"))
 
 (provide interpret interpret*)
 

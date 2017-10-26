@@ -5,10 +5,8 @@
 (require (postfix-in - rosette)
          typed/rosette/types
          typed/rosette/match-core
-         (only-in "extra-types.rkt"
-           ~C×)
          (only-in "extra-forms.rkt"
-           [tup tup*]))
+           [tup tup*] ~C×))
 
 ;; ------------------------------------------------------------------------
 

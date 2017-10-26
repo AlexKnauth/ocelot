@@ -2,15 +2,14 @@
 
 (provide for/hash
          set-member?
-         tup proj)
+         tup proj C×
+         (for-syntax ~C×))
 
-(require "require.rkt"
-         (except-in typed/rosette #%app)
+(require (except-in typed/rosette #%app)
          typed/rosette/types
-         "extra-types.rkt"
          (only-in typed/rosette/base-forms unsafe-assign-type)
          (only-in turnstile/examples/stlc+tup
-                  tup proj)
+                  tup proj [× C×] [~× ~C×])
          (prefix-in ro: rosette))
 
 ;; ----------------------------------------------------------------------------

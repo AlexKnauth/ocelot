@@ -1,7 +1,7 @@
 #lang typed/rosette
 
 (require "../lang/universe.rkt" "matrix.rkt"
-         (prefix-in $ "../lang/util/unlifted-ops.rkt"))
+         (prefix-in $ "../typed-rosette-util/unlifted-ops.rkt"))
 
 (provide (all-defined-out))
 

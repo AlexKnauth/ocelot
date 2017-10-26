@@ -1,8 +1,6 @@
 #lang typed/rosette
 
-(require "util/provide.rkt"
-         "util/extra-types.rkt"
-         "util/extra-forms.rkt")
+(require "../typed-rosette-util/extra-forms.rkt")
 
 (provide (except-out (all-defined-out) universe)
          (rename-out [make-universe universe]))

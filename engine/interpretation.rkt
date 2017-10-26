@@ -1,7 +1,6 @@
 #lang typed/rosette
 
-(require "../lang/util/extra-types.rkt"
-         "../lang/util/extra-forms.rkt"
+(require "../typed-rosette-util/extra-forms.rkt"
          "../lang/bounds.rkt" "../lang/universe.rkt" "matrix.rkt"
          (only-in "../lang/ast.rkt" CNode/Expr relation-arity)
          (prefix-in $ racket))
