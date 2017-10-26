@@ -33,9 +33,8 @@
   (let ([usize (universe-size universe)])
     (for/list ([i (in-range arity)])
       (list-ref (universe-atoms universe)
-                (assert-type
-                 (remainder (quotient idx (expt usize (- arity i 1))) usize)
-                 : CNat)))))
+                (remainder (quotient idx (assert-type (expt usize (- arity i 1)) : CNat))
+                           usize)))))
 
 (: singleton-matrix : (C→ CUniverse CNat CMatrix))
 (define (singleton-matrix universe idx)
